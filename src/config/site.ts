@@ -27,10 +27,9 @@ export const MAIN_NAV: NavItem[] = [
 
 export const X_USERNAME = "@akashlayal_"
 export const GITHUB_USERNAME = "anonymous-sherlock"
-export const SOURCE_CODE_GITHUB_REPO =
-  "anonymous-sherlock/akash-minimal-portfolio"
+export const SOURCE_CODE_GITHUB_REPO = "anonymous-sherlock/portfolio"
 export const SOURCE_CODE_GITHUB_URL =
-  "https://github.com/anonymous-sherlock/akash-minimal-portfolio"
+  "https://github.com/anonymous-sherlock/portfolio"
 export const PERSONAL_X_URL = "https://x.com/akashlayal_"
 export const PERSONAL_GITHUB_URL = "https://github.com/anonymous-sherlock"
 export const PERSONAL_LINKEDIN_URL = "https://www.linkedin.com/in/akashlayal"
