@@ -18,6 +18,7 @@ import { Markdown } from "@/components/markdown"
 import { Tag } from "@/components/ui/tag"
 import { ProseMono } from "@/components/ui/typography"
 import { UTM_PARAMS } from "@/config/site"
+import { cn } from "@/lib/utils"
 import { addQueryParams } from "@/utils/url"
 
 import type { Project } from "../../types/projects"
@@ -43,7 +44,10 @@ export function ProjectItem({
             width={32}
             height={32}
             quality={100}
-            className="mx-4 flex size-6 shrink-0 select-none"
+            className={cn(
+              "mx-4 flex size-6 shrink-0 select-none",
+              project.theme ? "dark:invert-100" : ""
+            )}
             unoptimized
             aria-hidden
           />

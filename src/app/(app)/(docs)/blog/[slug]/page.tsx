@@ -21,7 +21,7 @@ import { LLMCopyButtonWithViewOptions } from "@/features/blog/components/post-pa
 import { PostShareMenu } from "@/features/blog/components/post-share-menu"
 import {
   findNeighbour,
-  getAllDocs,
+  getBlogDocs,
   getDocBySlug,
 } from "@/features/doc/data/documents"
 import type { Doc } from "@/features/doc/types/document"
@@ -33,7 +33,7 @@ export const dynamic = "force-static"
 export const dynamicParams = false
 
 export async function generateStaticParams() {
-  const docs = getAllDocs()
+  const docs = getBlogDocs()
   return docs.map((doc) => ({ slug: doc.slug }))
 }
 
@@ -46,6 +46,10 @@ export async function generateMetadata({
   const doc = getDocBySlug(slug)
 
   if (!doc) {
+    return notFound()
+  }
+
+  if (doc.metadata.category === "components") {
     return notFound()
   }
 
@@ -118,9 +122,13 @@ export default async function Page({
     notFound()
   }
 
+  if (doc.metadata.category === "components") {
+    notFound()
+  }
+
   const toc = getTableOfContents(doc.content)
 
-  const allDocs = getAllDocs()
+  const allDocs = getBlogDocs()
   const { previous, next } = findNeighbour(allDocs, slug)
 
   return (

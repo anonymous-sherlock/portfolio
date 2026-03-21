@@ -9,7 +9,7 @@ const ScrollToTop = dynamic(() =>
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="group/layout">
+    <div className="group/layout noise-effect">
       <SiteHeader />
       <main className="max-w-screen overflow-x-hidden px-2">{children}</main>
       <SiteFooter />

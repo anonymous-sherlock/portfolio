@@ -1,7 +1,15 @@
 import { RssIcon } from "lucide-react"
 
 import { Icons } from "@/components/icons"
-import { SITE_INFO, SOURCE_CODE_GITHUB_URL } from "@/config/site"
+import {
+  PERONAL_SPOTIFY_URL,
+  PERSONAL_GITHUB_URL,
+  PERSONAL_LINKEDIN_URL,
+  PERSONAL_X_URL,
+  SITE_INFO,
+  SOURCE_CODE_GITHUB_URL,
+} from "@/config/site"
+import { USER } from "@/features/portfolio/data/user"
 import { cn } from "@/lib/utils"
 
 export function SiteFooter() {
@@ -9,20 +17,21 @@ export function SiteFooter() {
     <footer className="max-w-screen overflow-x-hidden px-2">
       <div className="screen-line-before mx-auto border-x border-edge pt-4 group-has-data-[slot=layout-wide]/layout:container md:max-w-3xl">
         <p className="mb-1 px-4 text-center font-mono text-sm text-balance text-muted-foreground">
-          Inspired by tailwindcss.com & ui.shadcn.com
+          Inspired by tailwindcss.com && @iamncdai
         </p>
 
         <p className="mb-4 px-4 text-center font-mono text-sm text-balance text-muted-foreground">
           Built by{" "}
           <a
-            className="link transition-[color] hover:text-foreground"
-            href="https://x.com/iamncdai"
+            className="link capitalize transition-[color] hover:text-foreground"
+            href={PERSONAL_GITHUB_URL}
             target="_blank"
             rel="noopener"
           >
-            ncdai
+            {USER.username}
           </a>
-          . The source code is available on{" "}
+          {/* . 
+          The source code is available on{" "}
           <a
             className="link transition-[color] hover:text-foreground"
             href={SOURCE_CODE_GITHUB_URL}
@@ -31,7 +40,7 @@ export function SiteFooter() {
           >
             GitHub
           </a>
-          .
+          . */}
         </p>
 
         <div className="screen-line-before screen-line-after flex w-full before:z-1 after:z-1">
@@ -49,11 +58,11 @@ export function SiteFooter() {
 
             <a
               className="flex items-center text-muted-foreground transition-[color] hover:text-foreground"
-              href="https://x.com/iamncdai?utm_source=chanhdai.com"
+              href={`${PERSONAL_X_URL}?utm_source=akashlayal.dev`}
               target="_blank"
               rel="noopener"
             >
-              <Icons.x className="size-4" />
+              <Icons.x className="size-[22px]" />
               <span className="sr-only">X</span>
             </a>
 
@@ -61,11 +70,11 @@ export function SiteFooter() {
 
             <a
               className="flex items-center text-muted-foreground transition-[color] hover:text-foreground"
-              href="https://github.com/ncdai?utm_source=chanhdai.com"
+              href={`${PERSONAL_GITHUB_URL}?utm_source=akashlayal.dev`}
               target="_blank"
               rel="noopener"
             >
-              <Icons.github className="size-4" />
+              <Icons.github className="size-[22px]" />
               <span className="sr-only">GitHub</span>
             </a>
 
@@ -73,11 +82,11 @@ export function SiteFooter() {
 
             <a
               className="flex items-center text-muted-foreground transition-[color] hover:text-foreground"
-              href="https://www.linkedin.com/in/ncdai?utm_source=chanhdai.com"
+              href={`${PERSONAL_LINKEDIN_URL}?utm_source=akashlayal.dev`}
               target="_blank"
               rel="noopener"
             >
-              <Icons.linkedin className="size-4" />
+              <Icons.linkedin className="size-[22px]" />
               <span className="sr-only">LinkedIn</span>
             </a>
 
@@ -85,12 +94,12 @@ export function SiteFooter() {
 
             <a
               className="flex items-center text-muted-foreground transition-[color] hover:text-foreground"
-              href={`${SITE_INFO.url}/rss`}
+              href={`${PERONAL_SPOTIFY_URL}?utm_source=akashlayal.dev`}
               target="_blank"
               rel="noopener"
             >
-              <RssIcon className="size-4" />
-              <span className="sr-only">RSS</span>
+              <Icons.spotify className="size-[22px]" />
+              <span className="sr-only">Spotify</span>
             </a>
 
             <Separator />

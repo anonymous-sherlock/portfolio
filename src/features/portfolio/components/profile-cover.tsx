@@ -2,9 +2,10 @@
 
 import { useRef } from "react"
 
+import { ALMark } from "@/components/al-mark"
 import { BrandContextMenu } from "@/components/brand-context-menu"
-import { ChanhDaiMark } from "@/components/chanhdai-mark"
 import { Magnet } from "@/components/react-bits/magnet"
+import { DottedGlowBackground } from "@/components/ui/dotted-glow-background"
 import { cn } from "@/lib/utils"
 
 export function ProfileCover() {
@@ -21,11 +22,22 @@ export function ProfileCover() {
           "bg-black/0.75 bg-[radial-gradient(var(--pattern-foreground)_1px,transparent_0)] bg-size-[10px_10px] bg-center [--pattern-foreground:var(--color-zinc-950)]/5 dark:bg-white/0.75 dark:[--pattern-foreground:var(--color-white)]/5"
         )}
       >
+        <DottedGlowBackground
+          className="pointer-events-none mask-radial-to-90% mask-radial-at-center"
+          opacity={1}
+          gap={10}
+          radius={1.4}
+          colorLightVar="--color-neutral-500"
+          glowColorLightVar="--color-neutral-600"
+          colorDarkVar="--color-neutral-500"
+          glowColorDarkVar="--color-sky-800"
+          backgroundOpacity={0.5}
+          speedMin={0.3}
+          speedMax={1.6}
+          speedScale={1}
+        />
         <Magnet containerRef={containerRef} magnetStrength={6}>
-          <ChanhDaiMark
-            id="js-cover-mark"
-            className="h-14 w-28 sm:h-16 sm:w-32"
-          />
+          <ALMark id="js-cover-mark" className="h-14 w-28 sm:h-16 sm:w-32" />
         </Magnet>
       </div>
     </BrandContextMenu>

@@ -19,23 +19,30 @@ export const TECH_STACK: TechStack[] = [
     href: "https://www.python.org/",
     categories: ["Language"],
   },
-  // {
-  //   key: "php",
-  //   title: "PHP",
-  //   href: "https://www.php.net/",
-  //   categories: ["Language"],
-  // },
+
   {
-    key: "java",
-    title: "Java",
-    href: "https://www.java.com/",
+    key: "php",
+    title: "PHP",
+    href: "https://www.php.net/",
     categories: ["Language"],
   },
+  // {
+  //   key: "java",
+  //   title: "Java",
+  //   href: "https://www.java.com/",
+  //   categories: ["Language"],
+  // },
   {
     key: "nodejs",
     title: "Node.js",
     href: "https://nodejs.org/",
     categories: ["Runtime Environment"],
+  },
+  {
+    key: "shopify",
+    title: "Shopify",
+    href: "https://www.shopify.com/",
+    categories: ["Framework"],
   },
   {
     key: "bun",
@@ -55,6 +62,12 @@ export const TECH_STACK: TechStack[] = [
     href: "https://nextjs.org/",
     categories: ["Framework"],
     theme: true,
+  },
+  {
+    key: "vitejs",
+    title: "Vite",
+    href: "https://vite.dev/",
+    categories: ["Framework"],
   },
   {
     key: "tailwindcss",
@@ -96,12 +109,12 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Library"],
     theme: true,
   },
-  {
-    key: "mobx-state-tree",
-    title: "MobX-State-Tree",
-    href: "https://mobx-state-tree.js.org/",
-    categories: ["State Management"],
-  },
+  // {
+  //   key: "mobx-state-tree",
+  //   title: "MobX-State-Tree",
+  //   href: "https://mobx-state-tree.js.org/",
+  //   categories: ["State Management"],
+  // },
   {
     key: "redux",
     title: "Redux",
@@ -133,12 +146,12 @@ export const TECH_STACK: TechStack[] = [
   //   href: "https://loopback.io/",
   //   categories: ["Framework"],
   // },
-  {
-    key: "laravel",
-    title: "Laravel",
-    href: "https://laravel.com/",
-    categories: ["Framework"],
-  },
+  // {
+  //   key: "laravel",
+  //   title: "Laravel",
+  //   href: "https://laravel.com/",
+  //   categories: ["Framework"],
+  // },
   {
     key: "git",
     title: "Git",
@@ -146,10 +159,23 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Version Control"],
   },
   {
+    key: "github",
+    title: "Github",
+    href: "https://github.com/",
+    categories: ["Version Control", "Collaboration"],
+    theme: true,
+  },
+  {
     key: "docker",
     title: "Docker",
     href: "https://www.docker.com/",
     categories: ["Containerization"],
+  },
+  {
+    key: "postgres",
+    title: "PostgreSQL",
+    href: "https://www.postgresql.org/",
+    categories: ["Database"],
   },
   {
     key: "mysql",
@@ -200,5 +226,17 @@ export const TECH_STACK: TechStack[] = [
     href: "https://chatgpt.com/",
     categories: ["Tools", "AI"],
     theme: true,
+  },
+  {
+    key: "zapier",
+    title: "Zapier",
+    href: "https://zapier.com/",
+    categories: ["Tools", "Automation", "Workflow"],
+  },
+  {
+    key: "cloudflare",
+    title: "Cloudflare",
+    href: "https://www.cloudflare.com/",
+    categories: ["Deployment", "DNS", "Storage", "Database"],
   },
 ]

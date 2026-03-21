@@ -3,7 +3,7 @@ import type { NavItem } from "@/types/nav"
 
 export const SITE_INFO = {
   name: USER.displayName,
-  url: process.env.APP_URL || "https://chanhdai.com",
+  url: process.env.APP_URL || "https://akashlayal.dev",
   ogImage: USER.ogImage,
   description: USER.bio,
   keywords: USER.keywords,
@@ -20,31 +20,25 @@ export const MAIN_NAV: NavItem[] = [
     href: "/",
   },
   {
-    title: "Components",
-    href: "/components",
-  },
-  {
-    title: "Blocks",
-    href: "/blocks",
-  },
-  {
     title: "Blog",
     href: "/blog",
   },
-  {
-    title: "Sponsors",
-    href: "/sponsors",
-    className: "sm:max-md:hidden",
-  },
 ]
 
-export const X_USERNAME = "@iamncdai"
-export const GITHUB_USERNAME = "ncdai"
-export const SOURCE_CODE_GITHUB_REPO = "ncdai/chanhdai.com"
-export const SOURCE_CODE_GITHUB_URL = "https://github.com/ncdai/chanhdai.com"
+export const X_USERNAME = "@akashlayal_"
+export const GITHUB_USERNAME = "anonymous-sherlock"
+export const SOURCE_CODE_GITHUB_REPO =
+  "anonymous-sherlock/akash-minimal-portfolio"
+export const SOURCE_CODE_GITHUB_URL =
+  "https://github.com/anonymous-sherlock/akash-minimal-portfolio"
+export const PERSONAL_X_URL = "https://x.com/akashlayal_"
+export const PERSONAL_GITHUB_URL = "https://github.com/anonymous-sherlock"
+export const PERSONAL_LINKEDIN_URL = "https://www.linkedin.com/in/akashlayal"
+export const PERONAL_SPOTIFY_URL =
+  "https://open.spotify.com/user/31brgiygjwccbjxkiyscyqmwtofq?si=9eb991142fe6430f"
 
-export const SPONSORSHIP_URL = "https://github.com/sponsors/ncdai"
+export const SPONSORSHIP_URL = PERSONAL_GITHUB_URL
 
 export const UTM_PARAMS = {
-  utm_source: "chanhdai.com",
+  utm_source: "akashlayal.dev",
 }

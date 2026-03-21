@@ -1,66 +1,59 @@
 import type { User } from "@/features/portfolio/types/user"
 
 export const USER: User = {
-  firstName: "Chánh Đại",
-  lastName: "Nguyễn",
-  displayName: "Chánh Đại",
-  username: "ncdai",
+  firstName: "Akash",
+  lastName: "Layal",
+  displayName: "Akash Layal / Sherlock",
+  username: "sherlock",
   gender: "male",
   pronouns: "he/him",
-  bio: "Creating with code. Small details matter.",
+  bio: "Full Stack Developer building SaaS, e-commerce, and CMS platforms.",
   flipSentences: [
-    "Creating with code. Small details matter.",
-    "Design Engineer",
-    "Open Source Contributor",
+    "Full Stack Developer",
+    "React, Next.js, and Node.js",
+    "SaaS, e-commerce, and CMS",
   ],
-  address: "Ho Chi Minh City, Viet Nam",
-  phoneNumber: "Kzg0Nzc3ODg4MTQ4", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
-  email: "ZGFpQGNoYW5oZGFpLmNvbQ==", // base64 encoded
-  website: "https://chanhdai.com",
-  jobTitle: "Design Engineer",
+  address: "Noida, Uttar Pradesh, India",
+  phoneNumber: "KzkxIDk4NyAwNDcgNDE4MQ==", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
+  email: "YWthc2hsYXlhbC5kZXNpZ25AZ21haWwuY29t", // base64 encoded
+  website: "https://akashlayal.dev",
+  jobTitle: "Full Stack Developer",
   jobs: [
     {
-      title: "Design Engineer",
-      company: "Shadcraft",
-      website: "https://shadcraft.com",
-      experienceId: "shadcraft",
+      title: "Full Stack Developer",
+      company: "AdsCrush",
+      website: "https://adscrush.com",
+      experienceId: "adscrush",
     },
     {
-      title: "Founder",
-      company: "Quaric",
-      website: "https://quaric.com",
-      experienceId: "quaric",
+      title: "Freelance Developer",
+      company: "Freelance",
+      website: "https://akashlayal.dev",
+      experienceId: "freelance",
     },
   ],
   about: `
-- **Design Engineer** with 5+ years of experience, known for pixel-perfect execution and strong attention to small details.
-- Skilled in **Next.js**, **React**, **TypeScript**, and modern front-end technologies; building high-quality, user-centric web and mobile applications.
-- Passionate about exploring new technologies and turning ideas into reality through polished, thoughtfully crafted personal projects.
-- Creator of [ZaDark](https://zadark.com) (2022): enhances the Zalo experience on PC & Web
-  - 80k+ downloads on [SourceForge](https://sourceforge.net/projects/zadark)*
-  - 30k+ active users on the [Chrome Web Store](https://chromewebstore.google.com/detail/llfhpkkeljlgnjgkholeppfnepmjppob)*
-- Creator of [React Wheel Picker](https://react-wheel-picker.chanhdai.com): iOS-like wheel picker with inertia scrolling & infinite loop
-  - 12k+ weekly downloads on [npm](https://www.npmjs.com/package/@ncdai/react-wheel-picker)*
-  - [▲Vercel OSS Program](https://vercel.com/blog/summer-2025-oss-program#react-wheel-picker) summer 2025 cohort
-
-<p class="text-muted-foreground">* Peak metrics recorded; actual current figures may vary.</p>
+- Full Stack Developer with 4+ years of experience delivering production-grade platforms for international clients using **React**, **Next.js**, **Node.js**, and **TypeScript**.
+- Build across the stack, from REST and tRPC APIs to database design, CI/CD automation, and edge deployments on **Vercel** and **Cloudflare Workers**.
+- Focused on maintainable architecture, performance, and polished interfaces for SaaS products, marketplaces, and CMS-driven experiences.
+- Based in **Noida, India**, currently working across remote product and freelance engagements.
 `,
-  avatar: "https://assets.chanhdai.com/images/chanhdai-avatar-ghibli.webp",
-  ogImage:
-    "https://assets.chanhdai.com/images/screenshot-og-image-dark.png?v=7",
-  namePronunciationUrl: "https://assets.chanhdai.com/audio/chanhdai.mp3?v=1",
-  timeZone: "Asia/Ho_Chi_Minh",
+  avatar: "/avatar.jpg",
+  ogImage: `/og/simple?title=${encodeURIComponent("Akash Layal")}&description=${encodeURIComponent("Full Stack Developer building SaaS, e-commerce, and CMS platforms.")}`,
+  namePronunciationUrl:
+    "https://assets.akashlayal.dev/sounds/akash-layal-pronunciation.mp3",
+  timeZone: "Asia/Kolkata",
   keywords: [
-    "ncdai",
-    "nguyenchanhdai",
-    "nguyen chanh dai",
-    "chanhdai",
-    "chanh dai",
-    "iamncdai",
-    "quaric",
-    "zadark",
-    "nguyễn chánh đại",
-    "chánh đại",
+    "Akash Layal",
+    "Sherlock",
+    "akashlayal",
+    "anonymous-sherlock",
+    "Full Stack Developer",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Noida",
   ],
   dateCreated: "2023-10-20", // YYYY-MM-DD
 }

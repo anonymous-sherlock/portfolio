@@ -1,0 +1,25 @@
+export function ALMark(props: React.ComponentProps<"svg">) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 512 256"
+      aria-hidden
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M256 64H0V0h256v64Z
+           M64 256H0V64h64v192Z
+           M256 256h-64V64h64v192Z
+           M192 192H64v-64h128v64Z
+           M384 256H320V0h64v256Z
+           M512 256H320v-64h192v64Z"
+      />
+    </svg>
+  )
+}
+
+export function getALMarkSVG(color: string) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 512 256"><path fill="${color}" d="M256 64H0V0h256v64ZM64 256H0V64h64v192ZM256 256h-64V64h64v192ZM192 192H64v-64h128v64ZM384 256H320V0h64v256ZM512 256H320v-64h192v64Z"/></svg>`
+}

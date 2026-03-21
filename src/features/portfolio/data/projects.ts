@@ -2,239 +2,180 @@ import type { Project } from "../types/projects"
 
 export const PROJECTS: Project[] = [
   {
-    id: "react-wheel-picker",
-    title: "React Wheel Picker",
+    id: "swing-boudoir-magazine",
+    title: "Swing Boudoir Magazine",
+    theme: true,
+    logo: "https://assets.akashlayal.dev/images/project-logos/swing-boudoir-magazine.png",
     period: {
-      start: "05.2025",
+      start: "06.2023",
     },
-    link: "https://react-wheel-picker.chanhdai.com",
+    link: "https://app.swingboudoirmag.com",
     skills: [
-      "Open Source",
-      "React",
+      "TanStack Router",
+      "Vite",
       "TypeScript",
-      "Monorepo",
-      "Turborepo",
-      "pnpm-workspace",
-      "Package Publishing",
-      "NPM Registry",
-      "GitHub Actions",
+      "Tailwind CSS",
+      "Hono",
+      "OpenAPI",
+      "Node.js",
+      "MySQL",
+      "Redis",
+      "Cron Jobs",
+      "Paypal",
+      "Stripe",
+      "Email Marketing",
     ],
-    description: `iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support. / Backed by [▲Vercel OSS Program](https://vercel.com/blog/summer-2025-oss-program#react-wheel-picker)
-- Natural touch scrolling with smooth inertia, mouse drag and scroll for desktop
-- Infinite loop scrolling
-- Unstyled core for complete style customization
-- Full keyboard navigation and type-ahead search
-`,
-    logo: "https://assets.chanhdai.com/images/project-logos/react-wheel-picker.svg",
+    description: `- Built a full-stack talent competition and digital magazine platform for a brand with 33K+ Instagram followers.
+- Added submission portal, user authentication, profile management, and magazine browsing.
+- Delivered a responsive, brand-matched experience backed by a private production codebase.`,
     isExpanded: true,
   },
   {
-    id: "chanhdaidotcom",
-    title: "chanhdai.com",
+    id: "the-mac-magazines",
+    title: "The MAC Magazines",
+    logo: "https://assets.akashlayal.dev/images/project-logos/mac-magazine.webp",
     period: {
-      start: "01.2025",
+      start: "06.2022",
+      end: "06.2023",
     },
-    link: "https://github.com/ncdai/chanhdai.com",
-    skills: [
-      "Open Source",
-      "Next.js 16",
-      "Tailwind CSS v4",
-      "Radix UI",
-      "Motion",
-      "shadcn/ui",
-      "shadcn registry",
-      "Vercel",
-    ],
-    description:
-      "A minimal, pixel-perfect dev portfolio, shadcn registry, and blog.",
-    logo: "https://assets.chanhdai.com/images/project-logos/chanhdaidotcom.svg",
+    link: "https://themacmagazines.com",
+    skills: ["WordPress", "PHP", "WooCommerce", "CSS3", "JavaScript"],
+    description: `- Built a fashion and celebrity magazine platform with a model submission portal and custom editorial flows.
+- Integrated WooCommerce payment flows for paid cover and billboard submissions.
+- Structured the content model around custom post types across fashion, beauty, and culture categories.`,
   },
   {
-    id: "quaricdotcom",
-    title: "quaric.com",
-    period: {
-      start: "03.2024",
-    },
-    link: "https://quaric.com",
-    skills: [
-      "Company Project",
-      "Next.js 15",
-      "Tailwind CSS v3",
-      "shadcn/ui",
-      "Strapi 5",
-      "VNPAY-QR",
-      "Docker",
-      "Docker Compose",
-      "NGINX",
-    ],
-    logo: "https://assets.chanhdai.com/images/project-logos/quaricdotcom.svg",
-  },
-  {
-    id: "zadark",
-    title: "ZaDark",
+    id: "kara-mowad",
+    title: "Kara Mowad",
+    logo: "https://assets.akashlayal.dev/images/project-logos/kara-mowad.webp",
+    theme: true,
     period: {
       start: "01.2022",
     },
-    link: "https://zadark.com",
-    skills: [
-      "Pet Project",
-      "Open Source",
-      "Browser Extension",
-      "CLI",
-      "Docusaurus 3",
-    ],
-    description: `ZaDark adds Dark Mode, anti-peeking, customizable fonts, backgrounds, and more to Zalo Web and PC.
-- Earned 10M+ VND in net sales from a paid Safari Extension*
-- 80k+ downloads on SourceForge* (awarded Community Leader badge by SourceForge)
-- 30k+ active users via Chrome Web Store*
-- Bronze Medal — 10th Design, Manufacturing, and Application Award 2022
-
-<p class="text-muted-foreground">* Peak metrics recorded; actual current figures may vary.</p>
-`,
-    logo: "https://assets.chanhdai.com/images/project-logos/zadark.svg",
+    link: "https://karamowad.com",
+    skills: ["HTML5", "CSS3", "JavaScript", "GSAP", "Figma", "SEO"],
+    description: `- Designed and developed a high-impact animated portfolio for a Texas-based commercial model.
+- Built GSAP-powered page transitions and motion-heavy interactions while keeping the experience responsive and SEO-friendly.
+- Delivered the full design-to-development workflow from Figma to launch.`,
   },
   {
-    id: "qabox",
-    title: "QABox",
+    id: "um-architects",
+    title: "UM Architects",
+    logo: "https://assets.akashlayal.dev/images/project-logos/um-architects.webp",
     period: {
-      start: "07.2023",
-      end: "07.2023",
+      start: "02.2025",
+      end: "04.2025",
     },
-    link: "https://github.com/ncdai/qabox",
-    skills: [
-      "University Project",
-      "PHP",
-      "MySQL",
-      "MVC",
-      "Docker",
-      "Docker Compose",
-    ],
-    description:
-      "- Course: Distributed Applications — FIT@HCMUS\n- Project Score: 10/10\n- Source Code: https://github.com/ncdai/qabox",
+    link: "https://umarchitects.com",
+    skills: ["WordPress", "PHP", "CSS3", "JavaScript", "SEO"],
+    description: `- Built a professional portfolio and services website for a Delhi-based architecture and interior design firm.
+- Structured content across residential, commercial, hospitality, and industrial project categories with a full portfolio gallery.
+- Delivered a responsive, brand-aligned experience showcasing architectural consultancy, interior design, Vastu, and structural engineering services.`,
   },
   {
-    id: "taskbox",
-    title: "TaskBox",
+    id: "glam-model",
+    title: "The Glam Model",
+    logo: "https://assets.akashlayal.dev/images/project-logos/glam-model.png",
     period: {
-      start: "07.2023",
-      end: "07.2023",
+      start: "03.2025",
+      end: "04.2025",
     },
-    link: "https://github.com/ncdai/taskbox",
-    skills: [
-      "University Project",
-      "PHP",
-      "MySQL",
-      "MVC",
-      "Docker",
-      "Docker Compose",
-    ],
-    description:
-      "- Course: Distributed Applications — FIT@HCMUS\n- Project Score: 10/10\n- Source Code: https://github.com/ncdai/taskbox",
+    link: "https://github.com/anonymous-sherlock/the-glam-model",
+    skills: ["Shopify", "Liquid", "CSS3", "JavaScript"],
+    description: `- Developed a custom Shopify theme for a fashion and modelling brand from the ground up.
+- Built structured layouts using Liquid templating across sections, snippets, and templates for a fully modular theme architecture.
+- Localisation-ready with a multi-locale config and custom asset pipeline.`,
   },
   {
-    id: "daichat-app",
-    title: "DaiChat App",
+    id: "all-that-is",
+    title: "All That Is",
+    logo: "https://assets.akashlayal.dev/images/project-logos/all-that-is.webp",
     period: {
-      start: "07.2020",
-      end: "07.2020",
+      start: "04.2025",
     },
-    link: "https://www.youtube.com/watch?v=H5U3J_W1low",
-    skills: ["University Project", "Java", "Java Swing", "Java Networking"],
-    description: `- Course: Java Application Programming — FIT@HCMUS
-- Requirement: Developed a real-time chat application using Java technologies
-- Project Score: 10/10
-- Source Code:
-  - Server: https://github.com/ncdai/ltudjava-summer2020-chatapp_server
-  - Client: https://github.com/ncdai/ltudjava-summer2020-chatapp_client`,
+    link: "https://allthatis.in",
+    skills: ["WordPress", "PHP", "CSS3", "JavaScript", "SEO"],
+    description: `- Built a Bollywood and Indian cinema editorial platform covering news, reviews, box office reports, and exclusive editorial series.
+- Structured content across custom categories including CinePedia, Cinema Mein Darshan, Spoiler Alert, and Post-Credit Scene.
+- Delivered a fully responsive, brand-aligned reading experience with a dark/light mode toggle and newsletter integration.`,
   },
   {
-    id: "qlsv-app",
-    title: "QLSV App",
+    id: "bohot-simple-hai",
+    title: "Bohot Simple Hai",
+    logo: "https://assets.akashlayal.dev/images/project-logos/bohot-simple-hai.webp",
     period: {
-      start: "06.2020",
-      end: "06.2020",
+      start: "04.2025",
     },
-    link: "https://www.youtube.com/watch?v=tG9SZEBrwog",
-    skills: ["University Project", "Java", "Java Swing", "Hibernate", "MySQL"],
-    description: `- Course: Java Application Programming — FIT@HCMUS
-- Requirement: Built a student management system with role-based functionalities using Java technologies
-- Project Score: 10/10
-- Source Code: https://github.com/ncdai/ltudjava-summer2020-hibernate`,
+    link: "https://bohotsimplehai.com",
+    skills: ["WordPress", "PHP", "CSS3", "JavaScript", "SEO"],
+    description: `- Built a Hindi personal development and analysis platform covering psychology, philosophy, business, and spirituality.
+- Structured content across editorial series including Art of Seduction, 48 Laws of Power, Analysis with Aman, and stock market content.
+- Delivered a responsive bilingual-friendly experience with YouTube video embeds, e-book integration, and newsletter support.`,
   },
   {
-    id: "penphy",
-    title: "Penphy",
+    id: "nakhraa",
+    title: "Nakhraa",
+    logo: "https://assets.akashlayal.dev/images/project-logos/nakhraa.webp",
     period: {
-      start: "01.2019",
-      end: "08.2019",
+      start: "09.2025",
+      end: "11.2025",
     },
-    link: "https://www.youtube.com/watch?v=EdU7rUO-UA4",
-    skills: ["Startup Project", "JavaScript", "React Native"],
-    description: "2nd Prize — Business Startup Competition 2019",
+    link: "https://www.instagram.com/shop.nakhraa",
+    skills: ["Shopify", "Liquid", "CSS3", "JavaScript"],
+    description: `- Built a trendy jewellery e-commerce store on Shopify for an Indian fashion jewellery brand.
+  - Implemented custom collection pages, product filtering, and a promotional banner system for seasonal sales.
+  - Delivered a fully responsive storefront with optimised product listings across jewellery categories.`,
   },
   {
-    id: "unlimitedstudy",
-    title: "UnlimitedStudy",
+    id: "carspartshop",
+    title: "Cars Part Shop",
+    logo: "https://assets.akashlayal.dev/images/project-logos/carspartshop.webp",
     period: {
-      start: "01.2017",
-      end: "08.2018",
+      start: "05.2025",
+      end: "07.2025",
     },
-    link: "https://muctim.tuoitre.vn/cong-cu-ho-tro-viec-day-va-hoc-55107.htm",
-    skills: [
-      "National Competition",
-      "Creative Software",
-      "PHP",
-      "Laravel 4",
-      "MySQL",
-      "jQuery",
-      "Bootstrap 3",
-    ],
-    description: `UnlimitedStudy is a website that provides teaching and learning support tools for teachers and students.
-- 3rd Prize — National Science and Engineering Fair 2018 (ViSEF)
-- 1st Prize — Can Tho City Science and Engineering Fair 2018
-- 3rd Prize — National Young Informatics Contest 2018
-- 2nd Prize — Can Tho City Youth and Children's Creativity Contest 2018
-- 3rd Prize — Can Tho City Young Informatics Contest 2018
-- Reached 7k+ users, mainly high school students in Can Tho City
-- Pilot implemented in high schools across Can Tho City with English quizzes, supervised by English subject specialists from the Can Tho City Department of Education and Training`,
+    link: "https://carspartshop.com",
+    skills: ["WordPress", "PHP", "WooCommerce", "CSS3", "JavaScript"],
+    description: `- Developed an online auto parts marketplace specialising in refurbished and aftermarket parts for a wide range of vehicle brands.
+- Integrated a parts finder tool enabling customers to search by brand, make, model, and year.
+- Built a customer-centric storefront with 365-day support workflows and streamlined order dispatch flows.`,
   },
   {
-    id: "dmessage",
-    title: "DMessage",
+    id: "sherlock-discord-bot",
+    title: "Sherlock Discord Bot",
     period: {
-      start: "05.2017",
-      end: "05.2017",
+      start: "01.2025",
+      end: "02.2025",
     },
-    link: "https://github.com/ncdai/DMessage",
-    skills: [
-      "Self-learning Project",
-      "Pet Project",
-      "Express.js",
-      "Socket.io",
-      "MongoDB",
-      "Mongoose ODM",
-    ],
-    description:
-      "A Messenger clone built to practice real-time communication using Socket.IO. This project showcases my self-learning journey in implementing WebSockets for instant messaging.",
+    link: "https://github.com/anonymous-sherlock/sherlock-discord-bot",
+    skills: ["TypeScript", "Node.js", "Discord.js"],
+    description: `- Built a feature-rich Discord bot in TypeScript with a modular command architecture.
+- Structured with ESLint and strict TypeScript config for maintainability and type safety.`,
   },
   {
-    id: "study-english",
-    title: "Study English",
+    id: "file-uploader",
+    title: "File Uploader",
     period: {
-      start: "11.2016",
-      end: "12.2017",
+      start: "07.2025",
+      end: "08.2025",
     },
-    link: "https://www.youtube.com/watch?v=OYgugvjqU4A",
-    skills: [
-      "National Competition",
-      "Creative Software",
-      "PHP",
-      "Laravel 4",
-      "MySQL",
-    ],
-    description: `Study English is a free, mobile-friendly website for high school English learning, offering vocabulary, quizzes, listening practice, and more.
-- Consolation Prize — National Youth and Children's Creativity Contest 2016
-- 1st Prize — Can Tho City Youth and Children's Creativity Contest 2016
-- Consolation Prize — Can Tho City Young Informatics Contest 2016`,
+    link: "https://github.com/anonymous-sherlock/adscrush-file-uploader",
+    skills: ["TypeScript", "Node.js", "Express", "multer"],
+    description: `- Built a RESTful file upload API using Node.js, Express, multer and the express middleware.
+- Configured nodemon for a smooth local development workflow with TypeScript compilation.
+- Clean project structure with ESLint, Prettier, and strict TS settings for code quality.`,
+  },
+  {
+    id: "7dollar-shop",
+    title: "7Dollar Shop",
+    period: {
+      start: "10.2025",
+      end: "11.2025",
+    },
+    link: "https://github.com/anonymous-sherlock/7dollarShop",
+    skills: ["Shopify", "Liquid", "CSS3", "JavaScript"],
+    description: `- Built a multi-brand e-commerce store on Shopify with support for multiple product categories and vendors.
+- Implemented custom collection pages, product filtering, and a streamlined checkout experience.
+- Delivered a fully responsive storefront optimised for discoverability and conversion.`,
   },
 ]

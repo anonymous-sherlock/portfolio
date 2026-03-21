@@ -46,7 +46,7 @@ export function TextFlip({
   className,
   children,
 
-  interval = 2,
+  interval = 3,
   transition = { duration: 0.3 },
   variants = defaultVariants,
 

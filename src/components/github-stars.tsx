@@ -34,20 +34,21 @@ export function GitHubStars({ repo, stargazersCount }: GitHubStarsProps) {
                   fill="currentColor"
                 />
               </svg>
-              <span className="text-[0.8125rem] text-muted-foreground tabular-nums">
+              {/* <span className="text-[0.8125rem] text-muted-foreground tabular-nums">
                 {new Intl.NumberFormat("en-US", {
                   notation: "compact",
                   compactDisplay: "short",
                 })
                   .format(stargazersCount)
                   .toLowerCase()}
-              </span>
+              </span> */}
             </a>
           </Button>
         }
       />
       <TooltipContent className="font-sans">
-        {new Intl.NumberFormat("en-US").format(stargazersCount)} stars
+        {/* {new Intl.NumberFormat("en-US").format(stargazersCount)} stars */}
+        Follow on GitHub
       </TooltipContent>
     </Tooltip>
   )

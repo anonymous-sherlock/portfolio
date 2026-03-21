@@ -324,6 +324,10 @@
 }
 
 @layer components {
+  .noise-effect {
+    background-image: url("https://assets.akashlayal.dev/images/noise.png");
+  }
+
   [data-rehype-pretty-code-figure] {
     @apply relative my-[1.25em] rounded-xl bg-code text-code-foreground;
 

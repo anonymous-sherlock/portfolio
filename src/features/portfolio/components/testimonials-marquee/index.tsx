@@ -1,13 +1,9 @@
-import { ArrowUpRightIcon } from "lucide-react"
-import Link from "next/link"
-
 import {
   Marquee,
   MarqueeContent,
   MarqueeFade,
   MarqueeItem,
 } from "@/components/kibo-ui/marquee"
-import { Button } from "@/components/ui/button"
 
 import { TESTIMONIALS_1, TESTIMONIALS_2 } from "../../data/testimonials"
 import type { Testimonial } from "../../types/testimonials"
@@ -48,14 +44,6 @@ export function TestimonialsMarquee() {
       <div className="flex h-2 w-full" />
 
       <TestimonialList direction="right" data={TESTIMONIALS_2} />
-
-      <div className="absolute right-0 bottom-0 z-10 -translate-x-2 rounded-lg bg-background ring-1 ring-background">
-        <Button className="size-7" variant="outline" size="icon-sm" asChild>
-          <Link href="/testimonials" aria-label="See all testimonials">
-            <ArrowUpRightIcon />
-          </Link>
-        </Button>
-      </div>
     </Panel>
   )
 }
