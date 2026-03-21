@@ -3,6 +3,7 @@ import type { ProfilePage as PageSchema, WithContext } from "schema-dts"
 
 import { About } from "@/features/portfolio/components/about"
 import { Blog } from "@/features/portfolio/components/blog"
+import { Certifications } from "@/features/portfolio/components/certifications"
 import { Experiences } from "@/features/portfolio/components/experiences"
 import { GitHubContributions } from "@/features/portfolio/components/github-contributions"
 import { MotivationalQuote } from "@/features/portfolio/components/motivational-quote"
@@ -66,6 +67,9 @@ export default function Page() {
         <Projects />
         <Separator />
 
+        <Certifications />
+        <Separator />
+
         <Blog />
         <Separator />
 
@@ -76,9 +80,7 @@ export default function Page() {
 
         {/* <Awards />
         <Separator />
-
-        <Certifications />
-        <Separator /> */}
+        */}
 
         {/* <Bookmarks />
         <Separator /> */}

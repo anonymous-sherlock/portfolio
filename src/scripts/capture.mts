@@ -6,7 +6,7 @@ import puppeteer from "puppeteer-core"
 
 const executablePath =
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-const url = process.env.URL || "https://ncdai.localhost:3004"
+const url = process.env.URL || "http://sherlock.localhost:1355/"
 const outputDir = path.join(process.cwd(), ".ncdai/screenshots")
 
 const SIZE = {
