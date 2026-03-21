@@ -1,5 +1,5 @@
-import { configDefault } from "fumadocs-core/highlight"
-import { highlightHast } from "fumadocs-core/highlight/core"
+import type { HighlightHastOptions } from "fumadocs-core/highlight"
+import { highlightHast } from "fumadocs-core/highlight"
 import type { ElementContent, Nodes } from "hast"
 import rehypeExternalLinks from "rehype-external-links"
 import { remark } from "remark"
@@ -17,7 +17,14 @@ export interface MarkdownRenderer {
   renderMarkdownToHast: (md: string) => Nodes | Promise<Nodes>
 }
 
-export function markdownRenderer(shiki = configDefault): MarkdownRenderer {
+export type MarkdownShikiOptions = Omit<
+  HighlightHastOptions,
+  "lang" | "structure"
+>
+
+export function markdownRenderer(
+  shiki?: MarkdownShikiOptions
+): MarkdownRenderer {
   const processor = remark()
     .use(remarkGfm)
     .use(remarkRehype)
@@ -33,7 +40,7 @@ export function markdownRenderer(shiki = configDefault): MarkdownRenderer {
   return {
     async renderTypeToHast(type) {
       const nodes = await highlightHast(type, {
-        config: shiki,
+        ...shiki,
         lang: "ts",
         structure: "inline",
       })
