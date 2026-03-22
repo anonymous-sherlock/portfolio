@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next"
 
 import { SITE_INFO } from "@/config/site"
-import { getBlogDocs, getDocsByCategory } from "@/features/doc/data/documents"
+import { getBlogDocs } from "@/features/doc/data/documents"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getBlogDocs().map((post) => ({
@@ -9,15 +9,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(post.metadata.updatedAt).toISOString(),
   }))
 
-  const components = getDocsByCategory("components").map((post) => ({
-    url: `${SITE_INFO.url}/components/${post.slug}`,
-    lastModified: new Date(post.metadata.updatedAt).toISOString(),
-  }))
-
-  const routes = ["", "/blog", "/components"].map((route) => ({
+  const routes = ["", "/blog"].map((route) => ({
     url: `${SITE_INFO.url}${route}`,
     lastModified: new Date().toISOString(),
   }))
 
-  return [...routes, ...posts, ...components]
+  return [...routes, ...posts]
 }

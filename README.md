@@ -1,11 +1,8 @@
-# [chanhdai.com](https://chanhdai.com) &middot; [![GitHub License](https://img.shields.io/github/license/ncdai/chanhdai.com?label=License)](https://github.com/ncdai/chanhdai.com/blob/main/LICENSE) ![GitHub Repo Views](https://gitviews.com/repo/ncdai/chanhdai.com.svg?style=flat&label-color=%23555&color=%23f59e0b)
+# [akashlayal.dev](https://akashlayal.dev) &middot; [![GitHub License](https://img.shields.io/github/license/anonymous-sherlock/portfolio?label=License)](https://github.com/anonymous-sherlock/portfolio/blob/main/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/anonymous-sherlock/portfolio?style=flat&label=Stars)](https://github.com/anonymous-sherlock/portfolio)
 
-A minimal, pixel-perfect dev portfolio, shadcn registry, and blog to showcase my work as a Design Engineer.
+A minimal, pixel-perfect portfolio and blog for **Akash Layal** (Sherlock), a full stack developer building SaaS, e-commerce, and CMS experiences.
 
-→ Check out the live site: [chanhdai.com](https://chanhdai.com)
-
-[![screenshot-dark](https://assets.chanhdai.com/images/screenshot-desktop-dark.webp?v=7#gh-dark-mode-only)](https://chanhdai.com#gh-dark-mode-only)
-[![screenshot-light](https://assets.chanhdai.com/images/screenshot-desktop-light.webp?v=7#gh-light-mode-only)](https://chanhdai.com#gh-light-mode-only)
+Live site: [https://akashlayal.dev](https://akashlayal.dev/)
 
 ## Overview
 
@@ -17,182 +14,36 @@ A minimal, pixel-perfect dev portfolio, shadcn registry, and blog to showcase my
 
 ### Featured
 
-- Clean & modern design
-- Light/Dark themes
-- vCard integration
-- SEO optimized ([JSON-LD schema](https://json-ld.org), sitemap, robots)
-- AI-ready with [/llms.txt](https://llmstxt.org)
-- Spam-protected email
-- Installable as PWA
-- Analytics with [PostHog](https://posthog.com) and [OpenPanel](https://openpanel.dev)
-- Consent management via [c15t](https://c15t.com)
+- Clean, responsive layout with light/dark themes
+- vCard download
+- SEO ([JSON-LD](https://json-ld.org), sitemap, robots)
+- AI-friendly [`/llms.txt`](https://llmstxt.org) and raw `.mdx` routes for posts
+- Spam-protected contact fields on the profile
+- PWA-ready
+- Analytics via [PostHog](https://posthog.com) and [OpenPanel](https://openpanel.dev), gated behind [c15t](https://c15t.com) consent
 
 ### Content
 
-Centralized document system powered by MDX:
+MDX-powered docs in `src/features/doc/content/`:
 
-- Unified content layer for blog posts and component docs
-- Category-based content organization
-- Raw `.mdx` endpoints for AI readability
-- Syntax highlighting with code blocks
-- Dynamic OG images for rich link previews
-- RSS feed for content distribution
-
-### Registry
-
-Easily build and distribute reusable components, hooks, and pages using a custom registry powered by the [shadcn CLI](https://ui.shadcn.com/docs/cli).
-
-Each entry is well-documented and includes:
-
-- Live preview & code snippets
-- Beautiful, readable code blocks
-- One-click command blocks (pnpm, npm, yarn, bun)
+- Blog posts rendered under `/blog`
+- Syntax highlighting for code in posts
+- Dynamic OG images for link previews
+- RSS at `/blog/rss` (and `/rss` rewrite)
 
 ## Development
 
-Please refer to the [Development Guide](./DEVELOPMENT.md) for more details.
+See the [Development Guide](./DEVELOPMENT.md).
 
 ## License
 
-Licensed under the [MIT license](./LICENSE).
+[MIT](./LICENSE). You may reuse this codebase; remove personal data and branding before publishing your own site.
 
-You're free to use my code! Just make sure to <ins>remove all my personal information</ins> before publishing your website. It's awesome to see my code being useful to someone!
+## Acknowledgments
 
-## Contributors
+Upstream design and structure are heavily inspired by [chanhdai.com](https://chanhdai.com) / [ncdai/chanhdai.com](https://github.com/ncdai/chanhdai.com). Thank you to the [shadcn/ui](https://ui.shadcn.com) ecosystem and related open-source projects.
 
-[![Contributors](https://contrib.rocks/image?repo=ncdai/chanhdai.com)](https://github.com/ncdai/chanhdai.com/graphs/contributors)
+## Repository
 
-> Made with [contrib.rocks](https://contrib.rocks)
-
-## Sponsors
-
-This project is proudly supported by:
-
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <a href="https://shadcnstudio.com?utm_source=chanhdai.com&utm_medium=banner&utm_campaign=github#gh-light-mode-only">
-          <img src="https://assets.chanhdai.com/images/sponsors/shadcnstudio.svg?v=2#gh-light-mode-only" alt="shadcnstudio.com" />
-        </a>
-        <a href="https://shadcnstudio.com?utm_source=chanhdai.com&utm_medium=banner&utm_campaign=github#gh-dark-mode-only">
-          <img src="https://assets.chanhdai.com/images/sponsors/shadcnstudio-dark.svg?v=2#gh-dark-mode-only" alt="shadcnstudio.com" />
-        </a>
-      </td>
-      <td>
-        <a href="https://shadcnspace.com#gh-light-mode-only">
-          <img
-            src="https://assets.chanhdai.com/images/sponsors/shadcnspace.svg?v=3#gh-light-mode-only"
-            alt="Shadcn Space"
-          />
-        </a>
-        <a href="https://shadcnspace.com#gh-dark-mode-only">
-          <img
-            src="https://assets.chanhdai.com/images/sponsors/shadcnspace-dark.svg?v=3#gh-dark-mode-only"
-            alt="Shadcn Space"
-          />
-        </a>
-      </td>
-      <td>
-        <a href="https://shadcraft.com?utm_source=chanhdai.com#gh-light-mode-only">
-          <img
-            src="https://assets.chanhdai.com/images/sponsors/shadcraft.svg?v=1#gh-light-mode-only"
-            alt="Shadcraft"
-          />
-        </a>
-        <a href="https://shadcraft.com?utm_source=chanhdai.com#gh-dark-mode-only">
-          <img
-            src="https://assets.chanhdai.com/images/sponsors/shadcraft-dark.svg?v=1#gh-dark-mode-only"
-            alt="Shadcraft"
-          />
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://www.shadcnblocks.com?utm_source=chanhdai.com#gh-light-mode-only">
-          <img
-            src="https://assets.chanhdai.com/images/sponsors/shadcnblocks.svg?v=1#gh-light-mode-only"
-            alt="Shadcnblocks"
-          />
-        </a>
-        <a href="https://www.shadcnblocks.com?utm_source=chanhdai.com#gh-dark-mode-only">
-          <img
-            src="https://assets.chanhdai.com/images/sponsors/shadcnblocks-dark.svg?v=1#gh-dark-mode-only"
-            alt="Shadcnblocks"
-          />
-        </a>
-      </td>
-      <td>
-        <a href="https://reactbits.dev?utm_source=chanhdai.com#gh-light-mode-only">
-          <img
-            src="https://assets.chanhdai.com/images/sponsors/reactbits.svg?v=1#gh-light-mode-only"
-            alt="React Bits"
-          />
-        </a>
-        <a href="https://reactbits.dev?utm_source=chanhdai.com#gh-dark-mode-only">
-          <img
-            src="https://assets.chanhdai.com/images/sponsors/reactbits-dark.svg?v=1#gh-dark-mode-only"
-            alt="React Bits"
-          />
-        </a>
-      </td>
-      <td>
-        <a href="https://shoogle.dev?utm_source=chanhdai.com#gh-light-mode-only">
-          <img
-            src="https://assets.chanhdai.com/images/sponsors/shoogle.svg?v=1#gh-light-mode-only"
-            alt="Shoogle"
-          />
-        </a>
-        <a href="https://shoogle.dev?utm_source=chanhdai.com#gh-dark-mode-only">
-          <img
-            src="https://assets.chanhdai.com/images/sponsors/shoogle-dark.svg?v=1#gh-dark-mode-only"
-            alt="Shoogle"
-          />
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://uirules.com?utm_source=chanhdai.com#gh-light-mode-only">
-          <img
-            src="https://assets.chanhdai.com/images/sponsors/uirules.svg?v=1#gh-light-mode-only"
-            alt="UI Rules"
-          />
-        </a>
-        <a href="https://uirules.com?utm_source=chanhdai.com#gh-dark-mode-only">
-          <img
-            src="https://assets.chanhdai.com/images/sponsors/uirules-dark.svg?v=1#gh-dark-mode-only"
-            alt="UI Rules"
-          />
-        </a>
-      </td>
-      <td>
-        <a href="https://openpanel.dev?utm_source=chanhdai.com#gh-light-mode-only">
-          <img
-            src="https://assets.chanhdai.com/images/sponsors/openpanel.svg?v=1#gh-light-mode-only"
-            alt="OpenPanel"
-          />
-        </a>
-        <a href="https://openpanel.dev?utm_source=chanhdai.com#gh-dark-mode-only">
-          <img
-            src="https://assets.chanhdai.com/images/sponsors/openpanel-dark.svg?v=1#gh-dark-mode-only"
-            alt="OpenPanel"
-          />
-        </a>
-      </td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-> Found this project useful? [Sponsor me](https://github.com/sponsors/ncdai) to help with support and maintenance.
-
-## Stats
-
-![Stats](https://repobeats.axiom.co/api/embed/583bf08fbdef57c3921d3cfda902d546df3e6ed1.svg "Repobeats analytics image")
-
-## Star History
-
-[![RepoStars-dark](https://www.repostars.dev/api/embed?repo=ncdai%2Fchanhdai.com&theme=dark#gh-dark-mode-only)](https://www.repostars.dev/?repos=ncdai%2Fchanhdai.com&theme=dark#gh-dark-mode-only)
-[![RepoStars-light](https://www.repostars.dev/api/embed?repo=ncdai%2Fchanhdai.com&theme=light#gh-light-mode-only)](https://www.repostars.dev/?repos=ncdai%2Fchanhdai.com&theme=light#gh-light-mode-only)
+- Source: [github.com/anonymous-sherlock/portfolio](https://github.com/anonymous-sherlock/portfolio)
+- Questions about privacy or data: [support@akashlayal.dev](mailto:support@akashlayal.dev)

@@ -5,6 +5,7 @@
 import { ChevronDownIcon } from "lucide-react"
 import { useMemo, useRef, useState } from "react"
 
+import { CopyStateIcon } from "@/components/copy-button-ui"
 import { Icons } from "@/components/icons"
 import { Button } from "@/components/ui/button"
 import { ButtonGroup, ButtonGroupSeparator } from "@/components/ui/button-group"
@@ -16,7 +17,6 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { SOURCE_CODE_GITHUB_URL } from "@/config/site"
 import type { CopyState } from "@/hooks/use-copy-to-clipboard"
-import { CopyStateIcon } from "@/registry/components/copy-button"
 
 const cache = new Map<string, string>()
 
@@ -77,33 +77,20 @@ export function LLMCopyButton({ markdownUrl }: { markdownUrl: string }) {
   )
 }
 
-function getPrompt(url: string, isComponent?: boolean) {
-  if (isComponent) {
-    return `I'm looking at this component documentation: ${url}
-I want to use it in a React (TypeScript) project.
-Help me understand how to use it step-by-step, including explaining key concepts, showing practical examples with TypeScript code, and pointing out common pitfalls.
-Be ready to answer follow-up questions and help debug issues based on the documentation.`
-  }
-
+function getPrompt(url: string) {
   return `Read ${url}, I want to ask questions about it.`
 }
 
-export function ViewOptions({
-  markdownUrl,
-  isComponent = false,
-}: {
-  markdownUrl: string
-  isComponent?: boolean
-}) {
+export function ViewOptions({ markdownUrl }: { markdownUrl: string }) {
   const items = useMemo(() => {
     const fullMarkdownUrl =
       typeof window !== "undefined"
         ? new URL(markdownUrl, window.location.origin).toString()
         : markdownUrl
 
-    const q = getPrompt(fullMarkdownUrl, isComponent)
+    const q = getPrompt(fullMarkdownUrl)
 
-    const _items = [
+    return [
       {
         title: "View as Markdown",
         href: fullMarkdownUrl,
@@ -151,19 +138,7 @@ export function ViewOptions({
         icon: Icons.scira,
       },
     ]
-
-    if (isComponent) {
-      _items.splice(2, 0, {
-        title: "Open in v0",
-        href: `https://v0.app/?${new URLSearchParams({
-          q,
-        })}`,
-        icon: Icons.v0,
-      })
-    }
-
-    return _items
-  }, [isComponent, markdownUrl])
+  }, [markdownUrl])
 
   return (
     <DropdownMenu>
@@ -200,16 +175,14 @@ export function ViewOptions({
 
 export function LLMCopyButtonWithViewOptions({
   markdownUrl,
-  isComponent = false,
 }: {
   markdownUrl: string
-  isComponent?: boolean
 }) {
   return (
     <ButtonGroup>
       <LLMCopyButton markdownUrl={markdownUrl} />
       <ButtonGroupSeparator className="border-y-4 border-secondary dark:bg-white/20 data-vertical:my-0" />
-      <ViewOptions markdownUrl={markdownUrl} isComponent={isComponent} />
+      <ViewOptions markdownUrl={markdownUrl} />
     </ButtonGroup>
   )
 }

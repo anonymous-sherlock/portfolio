@@ -15,7 +15,7 @@ Ensure you have the following installed:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/ncdai/chanhdai.com.git minimal-dev-portfolio
+git clone https://github.com/anonymous-sherlock/portfolio.git minimal-dev-portfolio
 cd minimal-dev-portfolio
 ```
 
@@ -63,28 +63,6 @@ After building, start the application with:
 NODE_ENV=production pnpm start
 ```
 
-## Registry
+## shadcn/ui CLI
 
-This project utilizes **shadcn Registry**, which allows you to manage and distribute custom components, hooks, pages, and other files across multiple React projects. By hosting a registry, you can reuse UI components easily without manually copying code between projects.
-
-### Using Registry in other React projects
-
-If you're working on a different React project and want to reuse the custom components from this repository, visit [chanhdai.com/components](https://chanhdai.com/components) for installation instructions and component documentation.
-
-> Note: These components are compatible with [Tailwind CSS v4](https://tailwindcss.com/blog/tailwindcss-v4) and [React 19](https://react.dev/blog/2024/12/05/react-19).
-
-### Registry configuration
-
-Documentation: [shadcn Registry Docs](https://ui.shadcn.com/docs/registry)
-
-Source files:
-
-- `./src/registry`
-
-Before using the registry, run the following command to build and generate the registry JSON files:
-
-```bash
-pnpm registry:build
-```
-
-When running the `npx shadcn add <registry-url>` command, the selected component will be automatically downloaded and integrated into your project.
+`components.json` configures aliases for the [shadcn CLI](https://ui.shadcn.com/docs/cli) (for example adding UI primitives from community registries listed under `registries`). This repo no longer ships a custom publishable component registry or `/components` docs section.

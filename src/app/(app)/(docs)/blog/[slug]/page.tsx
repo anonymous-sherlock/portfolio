@@ -49,10 +49,6 @@ export async function generateMetadata({
     return notFound()
   }
 
-  if (doc.metadata.category === "components") {
-    return notFound()
-  }
-
   const { title, description, image, createdAt, updatedAt } = doc.metadata
 
   const postUrl = getDocUrl(doc)
@@ -122,10 +118,6 @@ export default async function Page({
     notFound()
   }
 
-  if (doc.metadata.category === "components") {
-    notFound()
-  }
-
   const toc = getTableOfContents(doc.content)
 
   const allDocs = getBlogDocs()
@@ -156,10 +148,7 @@ export default async function Page({
         </Button>
 
         <div className="flex items-center gap-2">
-          <LLMCopyButtonWithViewOptions
-            markdownUrl={`${getDocUrl(doc)}.mdx`}
-            isComponent={doc.metadata.category === "components"}
-          />
+          <LLMCopyButtonWithViewOptions markdownUrl={`${getDocUrl(doc)}.mdx`} />
 
           <PostShareMenu title={doc.metadata.title} url={getDocUrl(doc)} />
 
@@ -251,6 +240,5 @@ export default async function Page({
 }
 
 function getDocUrl(doc: Doc) {
-  const isComponent = doc.metadata.category === "components"
-  return isComponent ? `/components/${doc.slug}` : `/blog/${doc.slug}`
+  return `/blog/${doc.slug}`
 }

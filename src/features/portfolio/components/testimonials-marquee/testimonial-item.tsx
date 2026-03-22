@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils"
 import {
   Testimonial,
   TestimonialAuthor,
@@ -8,7 +7,8 @@ import {
   TestimonialAvatarImg,
   TestimonialAvatarRing,
   TestimonialQuote,
-} from "@/registry/components/testimonial"
+} from "@/components/testimonial-ui"
+import { cn } from "@/lib/utils"
 
 import type { Testimonial as TestimonialType } from "../../types/testimonials"
 

@@ -1,5 +1,3 @@
-import { RssIcon } from "lucide-react"
-
 import { Icons } from "@/components/icons"
 import {
   PERONAL_SPOTIFY_URL,
@@ -7,7 +5,6 @@ import {
   PERSONAL_LINKEDIN_URL,
   PERSONAL_X_URL,
   SITE_INFO,
-  SOURCE_CODE_GITHUB_URL,
 } from "@/config/site"
 import { USER } from "@/features/portfolio/data/user"
 import { cn } from "@/lib/utils"
