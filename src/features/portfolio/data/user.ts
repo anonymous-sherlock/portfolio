@@ -17,7 +17,7 @@ export const USER: User = {
   phoneNumber: "KzkxIDk4NyAwNDcgNDE4MQ==", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
   email: "YWthc2hsYXlhbC5kZXNpZ25AZ21haWwuY29t", // base64 encoded
   website: "https://akashlayal.dev",
-  jobTitle: "Full Stack Developer",
+  jobTitle: "SDE II, Full Stack Developer",
   jobs: [
     {
       title: "Full Stack Developer",
@@ -33,7 +33,7 @@ export const USER: User = {
     },
   ],
   about: `
-- Full Stack Developer with 4+ years of experience delivering production-grade platforms for international clients using **React**, **Next.js**, **Node.js**, and **TypeScript**.
+- SDE II, Full Stack Developer with 5 years of experience delivering production-grade platforms for international clients using **React**, **Next.js**, **Node.js**, and **TypeScript**.
 - Build across the stack, from REST and tRPC APIs to database design, CI/CD automation, and edge deployments on **Vercel** and **Cloudflare Workers**.
 - Focused on maintainable architecture, performance, and polished interfaces for SaaS products, marketplaces, and CMS-driven experiences.
 - Based in **Noida, India**, currently working across remote product and freelance engagements.

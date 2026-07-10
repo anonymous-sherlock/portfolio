@@ -5,6 +5,7 @@ import { About } from "@/features/portfolio/components/about"
 import { Blog } from "@/features/portfolio/components/blog"
 import { Certifications } from "@/features/portfolio/components/certifications"
 import { Experiences } from "@/features/portfolio/components/experiences"
+import { Featured } from "@/features/portfolio/components/featured"
 import { GitHubContributions } from "@/features/portfolio/components/github-contributions"
 import { MotivationalQuote } from "@/features/portfolio/components/motivational-quote"
 import { Overview } from "@/features/portfolio/components/overview"
@@ -14,7 +15,6 @@ import { Projects } from "@/features/portfolio/components/projects"
 import { SocialLinks } from "@/features/portfolio/components/social-links-v2"
 import { SpotifyListening } from "@/features/portfolio/components/spotify-listening"
 import { TechStack } from "@/features/portfolio/components/tech-stack"
-import { TestimonialsMarquee } from "@/features/portfolio/components/testimonials-marquee"
 import { USER } from "@/features/portfolio/data/user"
 import { cn } from "@/lib/utils"
 
@@ -44,22 +44,15 @@ export default function Page() {
         <Separator />
 
         <About />
-        <div className="flex h-2 w-full border-x border-edge" />
+        <Separator />
 
-        {/* <TestimonialsMarquee />
-        <div className="flex h-2 w-full border-x border-edge" /> */}
+        <Featured />
 
         <GitHubContributions />
         <Separator />
 
-        {/* <Sponsors />
-        <Separator /> */}
-
         <TechStack />
         <Separator />
-
-        {/* <Components />
-        <Separator /> */}
 
         <Experiences />
         <Separator />
@@ -76,14 +69,6 @@ export default function Page() {
         <SpotifyListening />
 
         <MotivationalQuote />
-        {/* <Separator /> */}
-
-        {/* <Awards />
-        <Separator />
-        */}
-
-        {/* <Bookmarks />
-        <Separator /> */}
       </div>
     </>
   )

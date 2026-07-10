@@ -25,17 +25,7 @@ export function ProfileHeader() {
       </div>
 
       <div className="flex flex-1 flex-col">
-        <div className="flex grow items-end pb-1 pl-4">
-          <div
-            className="line-clamp-1 font-mono text-xs text-zinc-300 select-none max-sm:hidden dark:text-zinc-800"
-            aria-hidden
-          >
-            {"Last updated "}
-            <span className="inline">5 July 2026</span>
-            {/* <span className="hidden dark:inline">text-zinc-50</span> */}
-
-          </div>
-        </div>
+        <div className="flex grow items-end pb-1 pl-4" />
 
         <div className="border-t border-edge">
           <div className="flex items-center gap-2 pl-4">

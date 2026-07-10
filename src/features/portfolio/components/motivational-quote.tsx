@@ -1,3 +1,6 @@
+// Intentionally does NOT use the shared `Panel` primitive: this section uses a
+// custom `border-y` card with corner glyphs and a radial gradient as a deliberate
+// visual flourish to close the page, breaking the column rhythm on purpose.
 const CORNER_POSITIONS = [
   "top-0 left-0 -translate-x-1/2 -translate-y-1/2",
   "top-0 right-0 translate-x-1/2 -translate-y-1/2",

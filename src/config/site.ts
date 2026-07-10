@@ -38,6 +38,9 @@ export const PERONAL_SPOTIFY_URL =
 
 export const SPONSORSHIP_URL = PERSONAL_GITHUB_URL
 
+export const CONTACT_EMAIL = "YWthc2hsYXlhbC5kZXNpZ25AZ21haWwuY29t" // base64 encoded
+export const CV_URL = "https://assets.akashlayal.dev/cv/akash_layal_cv.pdf"
+
 export const UTM_PARAMS = {
   utm_source: "akashlayal.dev",
 }
