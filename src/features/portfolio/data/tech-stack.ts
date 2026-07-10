@@ -178,6 +178,12 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Operating System", "Security"],
   },
   {
+    key: "redhat",
+    title: "Red Hat",
+    href: "https://www.redhat.com/",
+    categories: ["Operating System"],
+  },
+  {
     key: "postgres",
     title: "PostgreSQL",
     href: "https://www.postgresql.org/",
@@ -200,6 +206,42 @@ export const TECH_STACK: TechStack[] = [
     title: "Redis",
     href: "https://redis.io/",
     categories: ["Database"],
+  },
+  {
+    key: "firebase",
+    title: "Firebase",
+    href: "https://firebase.google.com/",
+    categories: ["Database", "Backend Services"],
+  },
+  {
+    key: "sqlite",
+    title: "SQLite",
+    href: "https://www.sqlite.org/",
+    categories: ["Database"],
+  },
+  {
+    key: "ghostty",
+    title: "Ghostty",
+    href: "https://ghostty.org/",
+    categories: ["Tools", "Terminal"],
+  },
+  {
+    key: "vscode",
+    title: "VS Code",
+    href: "https://code.visualstudio.com/",
+    categories: ["Tools", "IDE"],
+  },
+  {
+    key: "postman",
+    title: "Postman",
+    href: "https://www.postman.com/",
+    categories: ["Tools", "API"],
+  },
+  {
+    key: "insomnia",
+    title: "Insomnia",
+    href: "https://insomnia.rest/",
+    categories: ["Tools", "API"],
   },
   {
     key: "figma",
