@@ -93,7 +93,10 @@ export function useSound(url: string) {
 
     // Start loading
     const loadingPromise = fetch(url)
-      .then((res) => res.arrayBuffer())
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`)
+        return res.arrayBuffer()
+      })
       .then((data) => audioCtx.decodeAudioData(data))
       .then((decoded) => {
         // Store in cache
@@ -236,7 +239,10 @@ export function useSoundLazy(url: string) {
     // Start new load
     setIsLoading(true)
     const loadingPromise = fetch(url)
-      .then((res) => res.arrayBuffer())
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`)
+        return res.arrayBuffer()
+      })
       .then((data) => audioCtx.decodeAudioData(data))
       .then((decoded) => {
         audioCache.set(url, { buffer: decoded, loading: loadingPromise })

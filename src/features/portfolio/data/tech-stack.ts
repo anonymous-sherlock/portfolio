@@ -172,6 +172,12 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Containerization"],
   },
   {
+    key: "parrot-os",
+    title: "Parrot OS",
+    href: "https://www.parrotsec.org/",
+    categories: ["Operating System", "Security"],
+  },
+  {
     key: "postgres",
     title: "PostgreSQL",
     href: "https://www.postgresql.org/",

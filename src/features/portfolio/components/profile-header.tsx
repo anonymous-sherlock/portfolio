@@ -31,9 +31,9 @@ export function ProfileHeader() {
             aria-hidden
           >
             {"Last updated "}
-            <span className="inline dark:hidden">21 March 2026</span>
+            <span className="inline">5 July 2026</span>
             {/* <span className="hidden dark:inline">text-zinc-50</span> */}
-            {" font-medium"}
+
           </div>
         </div>
 
