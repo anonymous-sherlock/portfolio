@@ -20,7 +20,7 @@ export const USER: User = {
   jobTitle: "SDE II, Full Stack Developer",
   jobs: [
     {
-      title: "Full Stack Developer",
+      title: "SDE II, Full Stack Developer",
       company: "AdsCrush",
       website: "https://adscrush.com",
       experienceId: "adscrush",
